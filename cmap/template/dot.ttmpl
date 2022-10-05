@@ -1,0 +1,13 @@
+digraph "{{.Name}}" {
+    rankdir=TB;
+    label="{{.Title}}";
+    // {{.Cmdline}}
+
+    {{range $n := .LsNodes}}
+    {{$n.Name}} [shape=rectangle, style=rounded, label="{{$n.Label}}"];
+    {{- end}}
+
+    {{range $t := .LsPhrases}}
+    {{$t.Src}} -> {{$t.Dst}} [label="{{$t.Relation}}"]; 
+    {{- end}}
+}

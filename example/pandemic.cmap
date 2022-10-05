@@ -1,0 +1,42 @@
+// Comments look like this.  We ignore blank lines.
+
+// Declare cmap name and title
+
+name pandemic
+title Git accessibility impact on the COVID-19 pandemic
+
+// Declare node aliases with 'a' followed by the node name and description.
+// - the first word of the description is used as the node name 
+
+a remote remote presence
+a technical technical folks
+a nontechnical nontechnical folks
+a research pandemic research
+a mitigations pandemic mitigations
+a self self interest
+
+// Declare phrases with a 'p' followed by the source node name,
+// relational phrase, and destination node name.
+
+p git supports remote
+p git optimized for technical
+p git not optimized for nontechnical
+// p git is optimized for managing a commons
+    
+p technical conduct research
+// p technical have difficulty communicating with nontechnical
+
+p nontechnical make policy
+p policy discourages remote
+p policy encourages onsite
+
+p onsite supports transmission
+p transmission causes illness
+p illness harms economy
+p illness harms self
+
+p research indicates mitigations
+p mitigations spurred remote
+p remote persists due to self
+
+p economy is a commons

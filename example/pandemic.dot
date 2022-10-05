@@ -1,0 +1,37 @@
+digraph "pandemic" {
+    rankdir=TB;
+    label="Git accessibility impact on the COVID-19 pandemic";
+    // /tmp/go-build4226178137/b001/exe/conceptual example/pandemic.cmap example/pandemic.dot
+
+    
+    remote [shape=rectangle, style=rounded, label="remote presence"];
+    technical [shape=rectangle, style=rounded, label="technical folks"];
+    nontechnical [shape=rectangle, style=rounded, label="nontechnical folks"];
+    research [shape=rectangle, style=rounded, label="pandemic research"];
+    mitigations [shape=rectangle, style=rounded, label="pandemic mitigations"];
+    self [shape=rectangle, style=rounded, label="self interest"];
+    git [shape=rectangle, style=rounded, label="git"];
+    policy [shape=rectangle, style=rounded, label="policy"];
+    onsite [shape=rectangle, style=rounded, label="onsite"];
+    transmission [shape=rectangle, style=rounded, label="transmission"];
+    illness [shape=rectangle, style=rounded, label="illness"];
+    economy [shape=rectangle, style=rounded, label="economy"];
+    commons [shape=rectangle, style=rounded, label="commons"];
+
+    
+    git -> remote [label="supports"];
+    git -> technical [label="optimized for"];
+    git -> nontechnical [label="not optimized for"];
+    technical -> research [label="conduct"];
+    nontechnical -> policy [label="make"];
+    policy -> remote [label="discourages"];
+    policy -> onsite [label="encourages"];
+    onsite -> transmission [label="supports"];
+    transmission -> illness [label="causes"];
+    illness -> economy [label="harms"];
+    illness -> self [label="harms"];
+    research -> mitigations [label="indicates"];
+    mitigations -> remote [label="spurred"];
+    remote -> self [label="persists due to"];
+    economy -> commons [label="is a"];
+}
